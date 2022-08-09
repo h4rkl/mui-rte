@@ -12,7 +12,7 @@ The Material-UI Rich Text Editor and Viewer
 npm install mui-rte --save
 ```
 
-Install the peer dependencies: `@mui/material`, `@mui/icons-material`, `@mui/styles`, `react` and `react-dom`. Also you will need to install the peer dependencies for MUI: `@emotion/react` and `@emotion/styled`.
+Install the peer dependencies: `@mui/material`, `@mui/icons-material`, `react` and `react-dom`. Also you will need to install the peer dependencies for MUI: `@emotion/react` and `@emotion/styled`.
 
 ## Demo
 
@@ -260,13 +260,13 @@ import MUIRichTextEditor from 'mui-rte'
 
 ## Styling the editor
 
-You can style the editor using the `Material-UI` theming feature. First create a theme with `createMuiTheme` and override classes such as `root`, `container`, `editor`, and `editorContainer`. Check the examples directory for more.
+You can style the editor using the `Material-UI` theming feature. First create a theme with `createTheme` and override classes such as `root`, `container`, `editor`, and `editorContainer`. Check the examples directory for more.
 
 ```js
-import { createMuiTheme, MuiThemeProvider } from '@mui/material/styles'
+import { createTheme } from '@mui/material/styles';
 import MUIRichTextEditor from 'mui-rte'
 
-const defaultTheme = createMuiTheme()
+const defaultTheme = createTheme({})
 
 Object.assign(defaultTheme, {
     overrides: {

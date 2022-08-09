@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import * as ReactDOM from 'react-dom'
 import Events from './events'
-import Themed from './theme'
+import { Themed } from './theme'
 import Basic from './basic'
 import RefSave from './ref-save'
 import ReadOnly from './read-only'

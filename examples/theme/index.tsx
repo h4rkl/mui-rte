@@ -12,7 +12,7 @@ export const defaultTheme: Theme = createTheme({
 })
 
 const muiRteTheme: TMUIRichTextEditorStyles = {
-    overrides: {
+    components: {
         MUIRichTextEditor: {
             root: {
                 backgroundColor: "#ebebeb",
@@ -51,7 +51,7 @@ const save = (data: string) => {
     console.log(data)
 }
 
-const Themed = () => {
+export const Themed = () => {
     return (
         <ThemeProvider theme={defaultTheme}>
             <MUIRichTextEditor
@@ -61,5 +61,3 @@ const Themed = () => {
         </ThemeProvider>
     )
 }
-
-export default Themed
